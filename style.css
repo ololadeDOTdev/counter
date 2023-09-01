@@ -101,9 +101,8 @@ h1 {
 }
 
 @media (max-width: 768px) {
-.from {
-  font-size: 1.7rem;
-}
+  .from {
+    font-size: 1.7rem;
   }
 }
 
