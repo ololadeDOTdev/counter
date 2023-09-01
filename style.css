@@ -43,18 +43,20 @@ h1 {
   left: 50%;
   transform: translate(-50%, 50%);
 }
-
+.p-reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .from {
   font-size: 1.4rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .reset {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .changes {
@@ -82,32 +84,89 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
-  .from {
-    font-size: 2rem;
-    margin-top: 15px;
+@media (max-width: 44em) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 32em) {
+  h1 {
+    font-size: 2.5rem;
   }
   .btn {
-    font-size: 2.5rem;
-    font-family: inherit;
-    padding: 2.5rem 3.5rem;
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
+  }
+  .from {
+    margin-top: 15px;
   }
   .changes {
     margin-top: -96px;
   }
-  .message {
-    font-size: 2.5rem;
+}
+@media (max-width: 27em) {
+  header {
+    height: 40vh;
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin-top: 5rem;
+  }
+  .p-reset {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+  .from {
+    margin-bottom: 2.5rem;
+    margin-right: 0;
+  }
+  .reset {
+    margin-left: 0;
+  }
+  .changes {
+    height: 60vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -5rem;
+    margin-bottom: 6rem;
+  }
+  .counter-plus {
+    margin-top: -100rem;
+    margin-bottom: -4rem;
+  }
+  .counter-minus {
+    margin-bottom: 1rem;
+  }
+  .btn {
+    font-size: 2.8rem;
+    padding: 2.8rem 3.8rem;
   }
 }
-
-@media (max-width: 768px) {
-  .from {
+@media (max-width: 26em) {
+  h1 {
     font-size: 1.7rem;
   }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
+  .counter-minus {
+    margin-top: -14rem;
+  }
+  .message {
+    margin-top: -23vh;
+    font-size: 1.7rem;
+  }
+  .btn {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+  }
+  .number {
+    font-size: 4rem;
+    width: 10rem;
+    padding: 3rem 0rem;
   }
 }

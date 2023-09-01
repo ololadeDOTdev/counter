@@ -17,13 +17,14 @@ const displayMessage = function (message) {
 updateDisplay();
 
 counterPlusElem.addEventListener("click", () => {
-  if (count >= 7) {
+  if (count >= 100) {
     displayMessage("This counter counts only from 0 to 100");
     document.querySelector("body").style.backgroundColor = "#60b347";
     count = count;
   } else {
     count++;
     document.querySelector("body").style.backgroundColor = "#222";
+    displayMessage("Count Now😃...");
   }
   updateDisplay();
 });
@@ -36,6 +37,7 @@ counterMinusElem.addEventListener("click", () => {
   } else {
     count--;
     document.querySelector("body").style.backgroundColor = "#222";
+    displayMessage("Count Now😃...");
   }
   updateDisplay();
 });
