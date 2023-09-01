@@ -81,3 +81,34 @@ h1 {
   font-size: 2rem;
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .from {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  .btn {
+    font-size: 2.5rem;
+    font-family: inherit;
+    padding: 2.5rem 3.5rem;
+  }
+  .changes {
+    margin-top: -96px;
+  }
+  .message {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+.from {
+  font-size: 1.7rem;
+}
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
